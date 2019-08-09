@@ -19,7 +19,7 @@ Find the answer of longest common prefix. if the i th and j th prefix had k alph
 
 ## Data
 The data used in this assignment will be provided in the data directory.
-it will be provided with space between every 10 alphabets.
+it will be provided with space or enter between every 10 alphabets. but ignore it when processing
 
 License : This data is a reformed version of human genom data which is open to the public in NCBI(National Center for Biotechnology Information) at NIH(National Institutes of Health) in United State of America.
 
@@ -46,7 +46,62 @@ $ python sa-is_lcp.py < X1M.txt
 
 time 6.033958196640015
 
+
+47941 48002 7051
+
+python sa-is_lcp.py < X10M.txt
+
+time 70.56135487556458
+
+3543341 3581770 9435
+
+## 目的
+東京大学の相田仁先生のアルゴリズム授業でのレポート問題のためsa-is法を使いました。
+この問題は長い文字列が与えられその中から、先頭からi文字目からi + k文字目までの文字
+列と先頭からj文字目からj + k文字目までの文字列が完全に一致するような組
+み合わせ(ただしi < jとする)のうち、kが最大となるようなi, j, kの値をなるべく小さいオーダーで導出する問題でした。
+そこで、sa-is法を使い、LCPを求め普通に解くにはO(n^2logn)のかかる問題をなるべくO(n)のオーダーで収まるようにすることが目的です。
+
+## データ
+課題で使用されたデータはdataディレクトリに入っています。
+これらのデータには文字数がわかりやすいように 10 文字ご
+とに空白文字または改行文字が挿入されていますが、処理を行う際には無
+視します。
+
+ライセンス :米国NIHのNCBIで公開されているヒトゲノムデータの一部を本課題向けに改良したものです。
+
+## 実行方法/結果
+1. 例えば先頭から５０文字だけをinputにしたいのなら
+
+$ python sa-is_lcp.py 50
+
+time 0.0002448558807373047
+
+4 10 32
+
+のようにする。１行目は実行時間を表し、２行目にi,j,kの値が出力される。
+
+具体的に説明すると、先頭から５０文字は次のようになるが、
+
+ZZZCTAACCC TAACCCTAAC CCTAACCCTA ACCCTAACCC TCTGAAAGTG
+
+4 10 32 とは４番目、１０番目から始まる文字列の相田に共通する３２文字の部分列があって(CTAACCCTAACCCTAACCCTAACCCTAACCCT)その長さが最大であることを意味する。
+
+2. 与えられたデータをinputにするには次のようにする。
+
+$ python sa-is_lcp.py < X1M.txt
+
+time 6.033958196640015
+
 47941 48002 7051
 
 
-米国NIHのNCBIで公開されているヒトゲノムデータの一部を本課題向けに改良したものです。
+
+python sa-is_lcp.py < X10M.txt
+
+time 70.56135487556458
+
+3543341 3581770 9435
+
+
+

@@ -1,6 +1,6 @@
 # SA-IS_LCP_Suffix_Array-Induced_Sort-Longgest_Common_Prefix-EN-JP-
 
-Japanese follows after English. 日本語の説明は英語の説明のあとに続く。
+Japanese follows after English. 日本語の説明は英語の説明のあとに続く。한국어로 문의 주셔도 됩니다. 저 한국인이에요!
 
 
 ## Environment

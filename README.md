@@ -8,7 +8,7 @@ Ubuntu18.04
 
 
 ## Purpose
-This sa-is algorithm is used for assignment in the class of algorithms in University of Tokyo by Professor Aida Hitoshi. 
+This sa-is algorithm is used for assignment in the class of algorithms in University of Tokyo by Professor Hitoshi　Aida. 
 The assignment was about finding the Longest Common Prefix(LCP) in the long data of string(reformed genom data).
 Moreover, do it in small order as possible. 
 The SA-IS algorithm is used to find the LCP in O(n), Linear order.

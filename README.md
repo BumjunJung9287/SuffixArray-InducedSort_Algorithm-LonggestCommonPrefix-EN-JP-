@@ -49,7 +49,7 @@ time 6.033958196640015
 
 47941 48002 7051
 
-python sa-is_lcp.py < X10M.txt
+$ python sa-is_lcp.py < X10M.txt
 
 time 70.56135487556458
 
@@ -97,7 +97,7 @@ time 6.033958196640015
 
 
 
-python sa-is_lcp.py < X10M.txt
+$ python sa-is_lcp.py < X10M.txt
 
 time 70.56135487556458
 

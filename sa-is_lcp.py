@@ -2,7 +2,7 @@ import time
 from sys import *
 INF = 10**10
 if len(argv) == 2:
-    f = open("X.txt", "r", encoding="utf-8")
+    f = open("X10M.txt", "r", encoding="utf-8")
     string = f.read().replace(" ","").replace("\n","")
     sl = int(argv[1])
     string = string[:sl]

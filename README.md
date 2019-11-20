@@ -9,13 +9,13 @@ Ubuntu18.04
 
 ## Purpose
 This sa-is algorithm is used for assignment in the class of algorithms in University of Tokyo by Professor Hitoshi　Aida. 
-The assignment was about finding the Longest Common Prefix(LCP) in the long data of string(reformed genom data).
-Moreover, do it in small order as possible. 
-The SA-IS algorithm is used to find the LCP in O(n), Linear order.
+The assignment was about finding the Longest Common sequence of letters in the long data of string(reformed genom data).
+Moreover, do it in small order as possible. The problem basically seek the sequence of some proteins in the genome data.
+The SA-IS algorithm and LCP are used to find the common sequence in O(n), Linear order.
 
 The content of the assignment was like following
 
-Find the answer of longest common prefix. if the i th and j th prefix had k alphbets in common and that k was the maximum value of all. print the i j k in the result
+Find the answer of longest common sequence. if the i th and j th sequence had k alphbets in common stargint from that letter and that k was the maximum value of all. print the i j k in the result
 
 ## Data
 The data used in this assignment will be provided in the data directory.
